@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import Head from 'next/head';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -25,6 +26,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="The Bet Collective" />
+        <meta
+          property="og:description"
+          content="Your unique horse racing tipping service"
+        />
+        <meta
+          property="og:image"
+          content="https://thebetcollective.com/favicon.ico"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:image"
+          content="https://thebetcollective.com/favicon.ico"
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
