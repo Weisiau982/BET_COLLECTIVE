@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Bet Collective | Trusted Sports Betting Community',
+    default: 'Bet Collective',
     template: '%s | Bet Collective',
   },
   description:

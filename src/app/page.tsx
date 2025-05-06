@@ -1,10 +1,21 @@
-import HeroSection from '@/components/ui/Page_Section/HeroSection';
-import WorkProcess from '@/components/ui/Page_Section/WorkProcess';
-import RefferralProgram from '@/components/ui/Page_Section/ReferralProgram';
-import React from 'react';
-import FrequentlyAskedQuestions from '@/components/ui/Page_Section/FrequentlyAskedQuestions';
-import MessageSection from '@/components/ui/Page_Section/MessageSection';
-import Footer from '@/components/ui/Page_Section/Footer';
+import dynamic from 'next/dynamic';
+
+const HeroSection = dynamic(
+  () => import('@/components/ui/Page_Section/HeroSection')
+);
+const WorkProcess = dynamic(
+  () => import('@/components/ui/Page_Section/WorkProcess')
+);
+const RefferralProgram = dynamic(
+  () => import('@/components/ui/Page_Section/ReferralProgram')
+);
+const FrequentlyAskedQuestions = dynamic(
+  () => import('@/components/ui/Page_Section/FrequentlyAskedQuestions')
+);
+const MessageSection = dynamic(
+  () => import('@/components/ui/Page_Section/MessageSection')
+);
+const Footer = dynamic(() => import('@/components/ui/Page_Section/Footer'));
 
 function page() {
   return (

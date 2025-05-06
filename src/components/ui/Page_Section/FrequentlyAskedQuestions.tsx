@@ -4,6 +4,7 @@ import { Collapse } from 'antd';
 import { CircleMinus, CirclePlus } from 'lucide-react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 const { Panel } = Collapse;
 
 const FrequentlyAskedQuestions = () => {
@@ -53,12 +54,17 @@ const FrequentlyAskedQuestions = () => {
   ];
 
   return (
-    <div
-      style={{
-        backgroundImage: `url(/Image/faq.jpg)`,
-      }}
-      className=" relative bg-cover bg-center md:py-28 bg-no-repeat py-10"
-    >
+    <div className="relative bg-cover bg-center md:py-28 bg-no-repeat py-10">
+      <div className="absolute top-0 left-0 w-full h-full">
+        <Image
+          src={'/Image/faq.jpg'}
+          width={1200}
+          height={800}
+          className="!w-full !object-cover !h-full"
+          alt="faq_image_backgorund"
+          loading='lazy'
+        />
+      </div>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-80"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h1

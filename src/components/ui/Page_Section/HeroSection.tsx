@@ -396,6 +396,7 @@ const HeroSection = () => {
                   <Image
                     src="/Img.svg"
                     alt="Horse Racing"
+                    loading='lazy'
                     width={
                       windowWidth < 640
                         ? 200
@@ -433,6 +434,7 @@ const HeroSection = () => {
                 <Image
                   src="/_Facebook.svg"
                   alt="Facebook"
+                  loading='lazy'
                   width={132}
                   height={132}
                   className="w-full h-full"
@@ -495,6 +497,7 @@ const HeroSection = () => {
                 <Image
                   src="/_Facebook.svg"
                   alt="Facebook"
+                  loading='lazy'
                   width={windowWidth < 1024 ? 20 : 30}
                   height={windowWidth < 1024 ? 20 : 30}
                   className="w-full h-full"

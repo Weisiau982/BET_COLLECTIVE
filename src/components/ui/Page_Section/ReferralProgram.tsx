@@ -164,6 +164,7 @@ const ReferralProgram = () => {
         <Image
           src="/Image/img1.png"
           alt="Logo"
+          loading='lazy'
           width={100}
           height={100}
           className="w-24 h-24 object-center md:block hidden object-contain"
@@ -176,6 +177,7 @@ const ReferralProgram = () => {
         <Image
           src="/Image/img1.png"
           alt="Logo"
+          loading='lazy'
           width={100}
           height={100}
           className="w-24 h-24 block md:hidden object-center object-contain"
@@ -192,6 +194,7 @@ const ReferralProgram = () => {
         <Image
           src="/Image/img3.png"
           alt="Logo"
+          loading='lazy'
           width={100}
           height={100}
           className="w-24 h-24 block md:hidden object-center object-contain"
@@ -208,6 +211,7 @@ const ReferralProgram = () => {
         <Image
           src="/Image/img3.png"
           alt="Logo"
+          loading='lazy'
           width={100}
           height={100}
           className="w-24 h-24 object-center object-contain"
@@ -220,6 +224,7 @@ const ReferralProgram = () => {
         <Image
           src="/Image/img2.png"
           alt="Logo"
+          loading='lazy'
           width={100}
           height={100}
           className="w-24 h-24 object-center object-contain"
@@ -234,6 +239,7 @@ const ReferralProgram = () => {
           alt="Logo"
           width={100}
           height={100}
+          loading='lazy'
           className="w-24 h-24 block md:hidden object-center object-contain"
         />
       ),

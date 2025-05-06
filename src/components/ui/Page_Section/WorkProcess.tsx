@@ -3,6 +3,7 @@ import React from 'react';
 import Card from '../Card';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 function WorkProcess() {
   const data = [
     {
@@ -22,18 +23,16 @@ function WorkProcess() {
     },
   ];
   return (
-    <div
-      style={{
-        backgroundImage: `url('/step_bg.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'top center',
-        backgroundRepeat: 'no-repeat',
-        width: '100%',
-        // backgroundAttachment: 'fixed',
-        backfaceVisibility: 'hidden',
-      }}
-      className="relative flex items-center gap-12 md:gap-24 justify-between flex-col py-8 md:pt-28 md:pb-16 px-2"
-    >
+    <div className="relative flex items-center gap-12 md:gap-24 justify-between flex-col py-8 md:pt-28 md:pb-16 px-2">
+      <div className="absolute top-0 left-0 w-full h-full">
+        <Image
+          src={'/step_bg.jpg'}
+          width={1400}
+          height={800}
+          alt="work_process"
+          className="w-full h-full object-cover object-top backface-hidden"
+        />
+      </div>
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-transparent via-transparent to-black"></div>
       <div className="flex items-center justify-center flex-col">
         <div className="w-fit z-[999]">

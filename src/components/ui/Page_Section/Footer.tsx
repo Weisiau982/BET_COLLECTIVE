@@ -23,6 +23,7 @@ function Footer() {
                 width={1000}
                 height={1000}
                 className="md:w-12 md:h-12 w-6 h-6"
+                loading='lazy'
               />
             </button>
           </Link>
@@ -38,6 +39,7 @@ function Footer() {
                 width={1000}
                 height={1000}
                 className="md:w-12 md:h-12 w-6 h-6"
+                loading='lazy'
               />
             </button>
           </Link>
