@@ -177,6 +177,34 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-AU">
+      <head>
+        <meta
+          property="og:url"
+          content="https://thebetcollective.com"
+          key="ogurl"
+        />
+        <meta
+          property="og:image"
+          content="/opengraph-image.png"
+          key="ogimage"
+        />
+        <meta
+          property="og:site_name"
+          content="Bet Collective"
+          key="ogsitename"
+        />
+        <meta
+          property="og:title"
+          content="Bet Collective | Get Paid $200 Today"
+          key="ogtitle"
+        />
+        <meta
+          property="og:description"
+          content="Join our trusted betting community of 500+ Aussies"
+          key="ogdesc"
+        />
+        <meta name="author" content="Bet Collective"></meta>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
