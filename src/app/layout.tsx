@@ -13,9 +13,161 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Bet Collective',
+  title: {
+    default: 'Bet Collective | Trusted Sports Betting Community',
+    template: '%s | Bet Collective',
+  },
   description:
-    'Base Horse is a horse racing tipping service that provides high-quality, data-driven tips for horse racing enthusiasts. We use machine learning algorithms to predict the outcome of horse races and provide our subscribers with the most likely winner of each race. Our tips are based on a thorough analysis of historical data, form, and other relevant factors. We also provide detailed race previews and analysis to help our subscribers make informed decisions. Our service is designed to be easy to use and understand, and we provide customer support to help our subscribers with any questions they may have.',
+    'Trusted By 500+ Aussies. Safe. Secure. Hassle-Free Sports Betting Community.',
+  keywords: [
+    'sports betting',
+    'betting community',
+    'Aussie betting',
+    'betting tips',
+    'safe betting',
+    'betting collective',
+    'online betting',
+    'best betting sites',
+    'sports betting odds',
+    'live betting',
+    'betting strategies',
+    'betting predictions',
+    'betting bonuses',
+    'betting promotions',
+    'betting exchanges',
+    'betting analytics',
+    'football betting tips',
+    'horse racing betting',
+    'NBA betting picks',
+    'cricket betting strategies',
+    'tennis betting odds',
+    'AFL betting tips',
+    'NRL betting guide',
+    'MLB betting predictions',
+    'UFC betting picks',
+    'golf betting tips',
+    'betting forum',
+    'betting Discord groups',
+    'betting Telegram channels',
+    'betting subreddit',
+    'betting experts',
+    'betting influencers',
+    'betting Twitter tips',
+    'betting Facebook groups',
+    'betting Instagram tips',
+    'betting YouTube channels',
+    'Aussie betting sites',
+    'Australian bookmakers',
+    'best betting apps Australia',
+    'TAB betting tips',
+    'Sportsbet Australia',
+    'Bet365 Australia',
+    'Ladbrokes Australia',
+    'Neds betting',
+    'BlueBet tips',
+    'PointsBet Australia',
+    'free betting tips',
+    'expert betting picks',
+    'daily betting predictions',
+    'winning betting strategies',
+    'value betting tips',
+    'sure betting tips',
+    'handicap betting guide',
+    'over/under betting tips',
+    'prop betting strategies',
+    'parlay betting tips',
+    'responsible gambling',
+    'safe betting sites',
+    'betting limits',
+    'betting addiction help',
+    'best odds guaranteed',
+    'low-risk betting strategies',
+    'bankroll management betting',
+    'verified betting sites',
+    'licensed bookmakers',
+    'scam betting sites to avoid',
+    'betting odds calculator',
+    'betting tracker app',
+    'betting software tools',
+    'AI betting predictions',
+    'betting statistics sites',
+    'betting algorithms',
+    'betting tipster reviews',
+    'betting profitability tools',
+    'betting arbitrage opportunities',
+    'betting edge strategies',
+    'best betting sign-up offers',
+    'free bet promotions',
+    'no deposit betting bonuses',
+    'matched betting Australia',
+    'betting cashback offers',
+    'betting reload bonuses',
+    'betting referral bonuses',
+    'betting multi promotions',
+    'betting loyalty programs',
+    'betting VIP rewards',
+    'live sports betting',
+    'in-play betting strategies',
+    'best live betting sites',
+    'cash-out betting',
+    'live betting odds',
+    'live betting tips',
+    'live betting markets',
+    'live betting trends',
+    'live betting volatility',
+    'live betting edge',
+    'sharp betting picks',
+    'square betting meaning',
+    'chalk betting term',
+    'steam betting moves',
+    'betting whales',
+    'betting syndicates',
+    'betting bankroll growth',
+    'betting variance',
+    'betting ROI strategies',
+    'betting bankroll builder',
+  ],
+  metadataBase: new URL('https://thebetcollective.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Bet Collective | Get Paid $200 Today',
+    description: 'Join our trusted betting community of 500+ Aussies',
+    url: 'https://thebetcollective.com',
+    siteName: 'Bet Collective',
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bet Collective',
+      },
+    ],
+    locale: 'en_AU',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bet Collective | Get Paid $200 Today',
+    description: 'Join our trusted betting community of 500+ Aussies',
+    images: ['/opengraph-image.png'],
+    creator: '@betcollective',
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -24,26 +176,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content="The Bet Collective" />
-        <meta
-          property="og:description"
-          content="Your unique horse racing tipping service"
-        />
-        <meta
-          property="og:image"
-          content="https://thebetcollective.com/og-image.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:image"
-          content="https://thebetcollective.com/og-image.jpg"
-        />
-      </head>
+    <html lang="en-AU">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
